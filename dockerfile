@@ -11,7 +11,7 @@ RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 RUN set -x \
     && addgroup --system --gid 102 nginx \
     && adduser --system --disabled-login --ingroup nginx --no-create-home --home /nonexistent --gecos "nginx user" --shell /bin/false --uid 101 nginx \
-    && apt update && apt-get install -y git nginx \
+    && apt update && apt-get install -y git nginx vim \
     && ansible-galaxy collection install netapp.ontap \
     && ansible-galaxy collection install netapp.elementsw \
     && ansible-galaxy collection install netapp.um_info \ 
