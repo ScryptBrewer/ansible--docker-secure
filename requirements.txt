@@ -2,3 +2,4 @@ ansible
 netapp-lib 
 requests 
 solidfire-sdk-python
+PyVmomi
