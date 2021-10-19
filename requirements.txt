@@ -4,3 +4,5 @@ requests
 solidfire-sdk-python
 PyVmomi
 paramiko
+boto3
+
